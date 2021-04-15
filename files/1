@@ -1,0 +1,17 @@
+import os
+a=open('/home/Python/files/testing.txt','w')
+a.write('This is testeing file cretaing by using python \n')
+a.close()
+b=open('/home/Python/files/testing.txt','a')
+b.write("\nPython is also simple language\npython is powerful language too\n")
+b.close()
+c=open('/home/Python/files/testing.txt','r')
+x=c.read()
+print(x)
+print(open('/home/Python/files/testing.txt','r').read())
+#########reading only one line############
+d=open('/home/Python/files/testing.txt','r')
+v=d.readline()
+e=print(v.split())
+print(e)
+print(open('/home/Python/files/testing.txt','r').readlines()[0])
